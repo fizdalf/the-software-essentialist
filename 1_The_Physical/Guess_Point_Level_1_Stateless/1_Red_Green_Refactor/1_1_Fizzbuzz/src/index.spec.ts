@@ -19,4 +19,7 @@ describe("fizzbuzz", () => {
     it("should return 'Fizz' when given 6", () => {
         expect(fizzbuzz(6)).toBe("Fizz");
     });
+    it("should return 'Fizz' when given 9", () => {
+        expect(fizzbuzz(9)).toBe("Fizz");
+    });
 });
