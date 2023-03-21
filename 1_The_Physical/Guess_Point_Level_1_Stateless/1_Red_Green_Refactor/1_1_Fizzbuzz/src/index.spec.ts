@@ -28,4 +28,8 @@ describe("fizzbuzz", () => {
     it("should return 'FizzBuzz' when given 15", () => {
         expect(fizzbuzz(15)).toBe("FizzBuzz");
     });
+    it("should error when given numbers smaller than 1", () => {
+        expect(() => fizzbuzz(0)).toThrow("Provide a number between 1 and 100");
+    });
+
 });
