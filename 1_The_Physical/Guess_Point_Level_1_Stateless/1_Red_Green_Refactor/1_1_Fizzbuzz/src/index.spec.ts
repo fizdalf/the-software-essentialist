@@ -7,4 +7,7 @@ describe("fizzbuzz", () => {
     it("should return '2' when given 2", () => {
         expect(fizzbuzz(2)).toBe("2");
     });
+    it("should return 'Fizz' when given 3", () => {
+        expect(fizzbuzz(3)).toBe("Fizz");
+    });
 });
