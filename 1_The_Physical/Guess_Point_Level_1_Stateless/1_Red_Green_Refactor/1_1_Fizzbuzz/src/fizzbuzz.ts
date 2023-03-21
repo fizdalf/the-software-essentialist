@@ -7,6 +7,9 @@ function isBuzz(givenNumber: number) {
 }
 
 export function fizzbuzz(givenNumber: number): string {
+    if (isFizz(givenNumber) && isBuzz(givenNumber)) {
+        return "FizzBuzz";
+    }
     if (isFizz(givenNumber)) {
         return "Fizz";
     }
