@@ -31,5 +31,8 @@ describe("fizzbuzz", () => {
     it("should error when given numbers smaller than 1", () => {
         expect(() => fizzbuzz(0)).toThrow("Provide a number between 1 and 100");
     });
+    it("should error when given numbers greater than 100", () => {
+        expect(() => fizzbuzz(101)).toThrow("Provide a number between 1 and 100");
+    });
 
 });

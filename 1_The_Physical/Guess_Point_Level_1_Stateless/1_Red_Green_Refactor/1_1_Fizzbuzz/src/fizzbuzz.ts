@@ -1,5 +1,5 @@
 export function fizzbuzz(givenNumber: number): string {
-    if (givenNumber < 1) {
+    if (givenNumber < 1 || givenNumber > 100) {
         throw new Error('Provide a number between 1 and 100');
     }
     if (isFizz(givenNumber) && isBuzz(givenNumber)) {
